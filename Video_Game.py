@@ -1,3 +1,19 @@
+###########################################################
+###########################################################
+
+################### VIDEO NUMBERS GAME ####################
+
+###########################################################
+
+####################### DESCRIPTION #######################
+# This program let you play to guess the number with Edmon. 
+
+
+######################### AUTHOR ##########################
+# Ing. DANIEL EDUARDO MONTERO RAMÍREZ
+
+
+
 import random
 
 
@@ -6,7 +22,7 @@ def run():
     rnd = random.randint(0,100)
     attemp = 5
     while num != rnd and attemp > 0:
-        number = input('Please, choose a number between 0 to 100. '+ ' You have ' + str(attemp) + ' attemps: ')
+        number = input('Hi! I´m Edmon. Please, choose a number between 0 to 100. '+ ' You have ' + str(attemp) + ' attemps: ')
         attemp -= 1
         try:
             num = int(number)
