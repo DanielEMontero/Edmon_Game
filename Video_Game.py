@@ -4,8 +4,10 @@ import random
 def run():
     num = None
     rnd = random.randint(0,100)
-    while num != rnd:
-        number = input('Please, choose a number between 0 to 100: ')
+    attemp = 5
+    while num != rnd and attemp > 0:
+        number = input('Please, choose a number between 0 to 100. '+ ' You have ' + str(attemp) + ' attemps: ')
+        attemp -= 1
         try:
             num = int(number)
         except:
@@ -15,7 +17,10 @@ def run():
             print('The number is bigger')
         elif num > rnd:
             print('The number is smaller')
-    print('You WON!!!')        
+    if num == rnd:
+        print('You WON!!!')
+    else:
+        print('You Lost... :(')
 
 
 if __name__ == "__main__":
