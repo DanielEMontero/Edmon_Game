@@ -15,8 +15,7 @@ def run():
             print('The number is bigger')
         elif num > rnd:
             print('The number is smaller')
-        else:
-            print('You WON!!!')        
+    print('You WON!!!')        
 
 
 if __name__ == "__main__":
